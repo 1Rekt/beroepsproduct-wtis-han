@@ -1,0 +1,126 @@
+body {
+    --background-color: white;
+    --primary-color: rgb(0, 157, 255);
+    --primary-color-active: rgb(75, 120, 255);
+    --success-color: rgb(2, 180, 2);
+    --success-color-active: rgb(32, 128, 5);
+    --error-background-color: #ffe0e0;
+}
+
+* {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+header nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+header nav ul li a:hover {
+    background-color: var(--primary-color-active);
+}
+header nav ul li a.active{
+    background-color: var(--primary-color-active);
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 20px 0px;
+    display:flex;
+    flex-direction: row;
+}
+footer ul li{
+    color: white;
+}
+footer ul li:not(:last-child){
+    margin-right: 20px;
+}
+
+.btn{
+    display: block;
+    text-align: center;
+    outline: 0;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: 200ms;
+    text-decoration: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-green{
+    color: white;
+    background-color: var(--success-color);
+}
+.btn-green:hover{
+    background-color: var(--success-color-active);   
+}
+
+.overflow-x-auto{
+    overflow-x: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mt-1{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 850px){
+    .container {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+}
